@@ -19,6 +19,7 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 /lambda/get_user_info.py
 
 /lambda/layer_aws_xray_sdk.zip
+
 /lambda/layer_redis.zip
 
 ## Test Client(python)
