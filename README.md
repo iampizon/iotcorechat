@@ -26,14 +26,12 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 ## Test Client(python)
 /test-client/iotcorechat-testclient.py
-
+- python의 UI라이브러리인 QT5( https://www.qt.io/qt-for-python ) 로 구현된 테스트 클라이언트 입니다. 아래와 같은 테스트 클라이언트가 구동됩니다. 입력창에 메시지를 입력 후 엔터를 입력하면 전송이 되고, /ban 유저이름 을 입력하면, 차단을 할 수 있습니다.
 
 ![테스트 클라이언트 이미지](https://github.com/iampizon/iotcorechat/blob/master/test-client/screentshot.png "AWS IoT Core Chat Client")
 
 
-python의 UI라이브러리인 QT5( https://www.qt.io/qt-for-python ) 로 구현된 
-테스트 클라이언트 
-테스트 클라이언트 입니다.
+
 
 
 ## Test Bot(python)
