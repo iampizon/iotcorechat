@@ -23,6 +23,8 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 ## Test Client(python)
 /test-client/iotcorechat-testclient.py
+
+
 ![테스트 클라이언트 이미지](https://github.com/iampizon/iotcorechat/blob/master/test-client/screentshot.png "AWS IoT Core Chat Client")
 
 
