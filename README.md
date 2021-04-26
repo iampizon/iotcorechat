@@ -13,14 +13,18 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 ## Lambda
 /lambda/message_watcher.py
+IoT Core의 채팅 메시지를 구독하여 동작하는 람다 펑션입니다. 차단당한 사용자의 메시지나 악성 단어가 포함된 메시지를 필터링하고, 지난 메시지 보기 기능을 위해 30초의 TTL을 걸어 Redis 에 메시지를 기록해둡니다.  
 
 /lambda/get_channel_last_message.py
+Redis에 기록되 지난 메시지를 불러옵니다. 최초 채널에 접속했을때 호출합니다.
 
 /lambda/get_user_info.py
+차단당한 유저의 정보를 DDB에 기록합니다.
 
 /lambda/layer_aws_xray_sdk.zip
 
 /lambda/layer_redis.zip
+각 람다 펑션에서 사용하는 레이어(공통모듈)들입니다. 람다의 내부 프로세스를 트레이스하기위한 Xray SDK와 Redis에 접속하기위한 SDK가 포함되있습니다.
 
 ## Test Client(python)
 /test-client/iotcorechat-testclient.py
