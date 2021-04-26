@@ -8,6 +8,7 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 
 ## 아키텍처
+![대체 텍스트(alternative text)를 입력하세요!](https://github.com/iampizon/iotcorechat/blob/master/iotcorechat-architecture.png "AWS IoT Core Chat Service")
 
 
 ## 람다 코드들
