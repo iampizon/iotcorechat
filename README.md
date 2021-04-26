@@ -42,6 +42,4 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 - 테스트용 봇을 100개 실행시키는 쉘스크립트입니다.
 
 /test-bot/run_chat_100_repeater.sh
-- 입력된 아규먼트 수만큼 run_chat_100.sh 을 실행시키는 쉘스크립트입니다.
-
-run_chat_100_repeater.sh 5 이런 식으로 입력하면 총 500개의 테스트용 봇이 실행됩니다.
+- 입력된 아규먼트 수만큼 run_chat_100.sh 을 실행시키는 쉘스크립트입니다. run_chat_100_repeater.sh 5 이런 식으로 입력하면 총 500개의 테스트용 봇이 실행됩니다.
