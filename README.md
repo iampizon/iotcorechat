@@ -12,7 +12,21 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 
 ## Lambda
+/lambda/message_watcher.py
+
+/lambda/get_channel_last_message.py
+
+/lambda/get_user_info.py
+
+/lambda/layer_aws_xray_sdk.zip
+/lambda/layer_redis.zip
 
 ## Test Client(python)
+/test-client/iotcorechat-testclient.py
 
 ## Test Bot(python)
+/test-bot/iotcorechat_testbot.py
+
+/test-bot/run_chat_100.sh
+
+/test-bot/run_chat_100_repeater.sh
