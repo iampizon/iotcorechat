@@ -26,7 +26,7 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 ## Test Client(python)
 /test-client/iotcorechat-testclient.py
-- python의 UI라이브러리인 QT5( https://www.qt.io/qt-for-python ) 로 구현된 테스트 클라이언트 입니다. 아래와 같은 테스트 클라이언트가 구동됩니다. 입력창에 메시지를 입력 후 엔터를 입력하면 전송이 되고, /ban 유저이름 을 입력하면, 차단을 할 수 있습니다.
+- python의 UI라이브러리인 QT5( https://www.qt.io/qt-for-python ) 로 구현된 테스트 클라이언트 입니다. 아래와 같은 테스트 클라이언트가 구동됩니다. 입력창에 메시지를 입력 후 엔터를 입력하면 전송이 되고, /ban XXXXX 을 입력하면, XXXXX를 이름으로 사용하는 사용자의 메시지를 차단합니다.
 
 ![테스트 클라이언트 이미지](https://github.com/iampizon/iotcorechat/blob/master/test-client/screentshot.png "AWS IoT Core Chat Client")
 
@@ -36,7 +36,12 @@ https://aws.amazon.com/ko/blogs/korea/implementing-game-chat-application-with-aw
 
 ## Test Bot(python)
 /test-bot/iotcorechat_testbot.py
+- Test Client에서 UI코드를 걷어내고, 무한루프를 돌면서 0~3초 간격으로 랜덤 메시지를 발송하는 테스트용 봇입니다.
 
 /test-bot/run_chat_100.sh
+- 테스트용 봇을 100개 실행시키는 쉘스크립트입니다.
 
 /test-bot/run_chat_100_repeater.sh
+- 입력된 아규먼트 수만큼 run_chat_100.sh 을 실행시키는 쉘스크립트입니다.
+
+run_chat_100_repeater.sh 5 이런 식으로 입력하면 총 500개의 테스트용 봇이 실행됩니다.
